@@ -63,7 +63,7 @@ export default function Component(props) {
             <Typography variant="h6" component="p" color="textSecondary" align="center">Please Note:</Typography>
             <Typography variant="body2" component="p" color="textSecondary" align="center">
               This device will be the room host. 
-              To keep your API keys private, this device will constrol your Spotify playback and must remain open at all times.
+              To keep your API keys private, this device will control your Spotify playback and must remain open at all times.
               Failure to do so will result in your room being terminated, and playback stopping.
             </Typography>
             <Box my={3}>
