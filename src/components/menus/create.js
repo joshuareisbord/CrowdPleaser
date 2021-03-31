@@ -1,8 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { emphasize, fade, darken, lighten } from '@material-ui/core/styles/colorManipulator';
 
-import clsx from 'clsx';
 import { blue } from '@material-ui/core/colors';
 
 import Container from '@material-ui/core/Container';
@@ -12,7 +10,6 @@ import CardContent from '@material-ui/core/CardContent';
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import TextField from '@material-ui/core/TextField';
 import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 
@@ -74,7 +71,10 @@ export default function Component(props) {
                       alignItems="center"
                       spacing={2} >
                   <Grid item xs={12}>
-                    <Button type="submit" variant="contained" color="primary" size="large" className={classes.primaryAction}>
+                    {/* <Button type="submit" variant="contained" color="primary" size="large" className={classes.primaryAction}>
+                        Login with Spotify
+                      </Button> */}
+                      <Button onClick={props.handleLogin} variant="contained" color="primary" size="large" className={classes.primaryAction}>
                         Login with Spotify
                       </Button>
                   </Grid>

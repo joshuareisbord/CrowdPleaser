@@ -5,7 +5,7 @@ import {
   Route
 } from 'react-router-dom';
 
-import { Box, Button, Divider, Grid } from '@material-ui/core'
+import { Box } from '@material-ui/core'
 
 import Footer from './components/footers/footer';
 
@@ -13,7 +13,7 @@ import IndexPage from './pages/Index.js';
 import HostviewPage from './pages/host.js';
 import GuestviewPage from './pages/guest.js';
 import CreatePage from './pages/create.js';
-import JoinPage from './pages/Join.js';
+import JoinPage from './pages/join.js';
 import ErrorPage from './pages/404.js';
 
 

@@ -1,8 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { emphasize, fade, darken, lighten } from '@material-ui/core/styles/colorManipulator';
-
-import clsx from 'clsx';
 
 import Container from '@material-ui/core/Container';
 import Box from '@material-ui/core/Box';

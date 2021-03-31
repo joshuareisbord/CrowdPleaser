@@ -1,8 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { emphasize, fade, darken, lighten } from '@material-ui/core/styles/colorManipulator';
 
-import clsx from 'clsx';
 import { blue } from '@material-ui/core/colors';
 
 import Container from '@material-ui/core/Container';
@@ -62,17 +60,17 @@ export default function Component(props) {
             <Typography variant="h5" component="h3" align="center" gutterBottom={true}>Join a Room</Typography>
             <Typography variant="body2" component="p" color="textSecondary" align="center">Enter the room code provided by the host</Typography>
             <Box my={3}>
-              <form noValidate>
+              <form>
                   <Grid container 
                       direction="column"
                       justify="center"
                       alignItems="center"
                       spacing={2}>
                   <Grid item xs={12}>
-                    <TextField variant="outlined" fullWidth size="small" name="roomkey" label="Enter room code"/>
+                    <TextField onChange={props.change} variant="outlined" fullWidth size="small" name="roomkey" label="Enter room code"/>
                   </Grid>
                   <Grid item xs={12}>
-                    <Button type="submit" variant="contained" color="primary" size="large" className={classes.primaryAction}>
+                    <Button onClick={props.setKey} variant="contained" color="primary" size="large" className={classes.primaryAction}>
                         Join
                       </Button>
                   </Grid>

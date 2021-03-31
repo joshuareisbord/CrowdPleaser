@@ -1,9 +1,12 @@
 import React from 'react';
 
-export default function Guestview() {
+export default function Guestview(props) {
   return (
-
-    <h1>Something</h1>
+    <div>
+      <h1>This is the guest landing.</h1>
+      <h1>{props.roomKey}</h1>
+    </div>
+    
     
   );
 }
