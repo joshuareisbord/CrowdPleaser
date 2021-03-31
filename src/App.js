@@ -13,7 +13,7 @@ import IndexPage from './pages/Index.js';
 import HostviewPage from './pages/host.js';
 import GuestviewPage from './pages/guest.js';
 import CreatePage from './pages/create.js';
-import JoinPage from './pages/join.js';
+import JoinPage from './pages/Join.js';
 import ErrorPage from './pages/404.js';
 
 
