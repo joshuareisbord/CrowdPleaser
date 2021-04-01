@@ -5,6 +5,8 @@ import GuestPage from './guest'
 
 import veryifyKey from '../util/veryifykey'
 
+import { db_get_room } from '../util/databaseUtil'
+
 class Join extends Component{
 
   constructor(props){
@@ -12,7 +14,8 @@ class Join extends Component{
 
     this.state = {
       roomKey: null,
-      keyValid: null
+      keyValid: null,
+      queue: []
     }
 
   } // end of constructor
@@ -20,9 +23,14 @@ class Join extends Component{
   /* Function used to set state of room key*/
   handleSubmit(){
     console.log("Key Submitted.... waiting on verification")
-    console.log(this.state.roomKey)
 
     // ----- VERIFY KEY HERE! -----
+
+    let arr = db_get_room(this.state.roomKey)
+
+    this.setState({queue: arr})
+
+    
     
     this.setState({keyValid: true})
   } // end of setRoomKey method
@@ -41,7 +49,7 @@ class Join extends Component{
     }
     else { // key is valid and has been entered
       return (
-        <GuestPage roomKey={this.state.roomKey}/> // send user to the room of the key entered
+        <GuestPage roomKey={this.state.roomKey} queue={this.state.queue}/> // send user to the room of the key entered
       );
     }
   } // end of render function
