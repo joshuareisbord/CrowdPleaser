@@ -8,6 +8,9 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
 import Queue from '../../../shared_components/queue'
+import Container from "@material-ui/core/Container";
+import Box from "@material-ui/core/Box";
+import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles((theme) => ({
 		root: {
@@ -25,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-export default function Guest(props) {
+export default function Guest_page(props) {
 
 	const classes = useStyles();
 
@@ -34,15 +37,28 @@ export default function Guest(props) {
 	return (
 
 		<div>
-			<h1>This is the guest landing.</h1>
-			<h1>{props.roomKey}</h1>
+			<Box textAlign="center">
+
+				<Typography variant="h2" component="h2" gutterBottom={true}>
+					<Typography color="primary" variant="h2" component="span">
+						Room:
+					</Typography>
+					<Typography variant="h2" component="span">
+						{" " + props.roomKey}
+					</Typography>
+				</Typography>
+
+				<Container maxWidth="sm">
+					<Typography variant="h6" color="textSecondary" paragraph={true}>
+						Upvote or down vote songs as seen fit!
+					</Typography>
+				</Container>
+
+			</Box>
 
 			<Grid container>
 
 				<Grid item xs={12} md={12}>
-					<Typography variant="h6" className={classes.title}>
-						Avatar with text and icon
-			</Typography>
 					<div className={classes.demo}>
 						<List>
 

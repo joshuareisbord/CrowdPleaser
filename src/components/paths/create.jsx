@@ -4,7 +4,7 @@ import CreateRoom from './create/create_form';
 
 import veryifyKey from '../../util/veryifykey';
 
-import HostPage from './create/host/host'
+import HostPage from './create/host/host_page'
 
 class Create extends Component{
 
@@ -12,56 +12,20 @@ class Create extends Component{
     super(props)
 
     this.state = {
-      spotifyKey: null,
+      authKey: null,
       roomKey: null,
-      keyValid: null
+      hostSecret: null
     }
 
   } // end of constructor
 
-  /* Function used to set state of room key*/
-  setRoomKey(key){
-
-    this.setState({keyValid: true,
-                   roomKey: key})
-  } // end of setRoomKey method
-
-  /* Function used to set state of Spotify key*/
-  setSpotifyKey(key){
-
-      this.setState({spotifyKey: key})
-  } // end of setSpotifyKey method
-
   handleLogin(){
-
-    // Call to backend function to create room
-    // Set state roomKey to value returned by backend
-
-    // Prompt user with spotify login
-    // Set state spotifyKey to value returned by Spotify
-
-    this.setRoomKey('1234');
-    this.setSpotifyKey('something-returned-by-spotify')
-
-    setTimeout(() =>  {
-                        console.log(this.state.roomKey)
-                        console.log(this.state.spotifyKey)
-                      }, 1);
-
-
+    // Create a new room in the database
   }
 
-  // /* Render function of Create class.*/
-  // render() {
-    
-  //   return (
-  //     // <CreateRoom setRoomKey={this.setRoomKey.bind(this)} setSpotifyKey={this.setSpotifyKey.bind(this)}/>
-  //     <CreateRoom handleLogin={this.handleLogin.bind(this)}/>
-  //   );
-  // } // end of render method
 
   render() {
-    if (this.state.roomKey == null || this.state.keyValid === false || this.state.keyValid == null || this.state.spotifyKey == null) { // no key entered or it was wrong.
+    if (this.state.roomKey == null || this.state.spotifyKey == null) { // room has not been created
       return (
         <CreateRoom handleLogin={this.handleLogin.bind(this)}/>
       );

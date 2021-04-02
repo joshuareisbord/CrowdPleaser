@@ -13,7 +13,7 @@ import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 
-import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
+import GroupIcon from '@material-ui/icons/Group';
 
 const useStyles = makeStyles((theme) => ({
   section: {
@@ -51,7 +51,7 @@ export default function Component(props) {
           <Box display="flex" mt={3}>
             <Box mx="auto">
               <Avatar variant="rounded" className={classes.iconWrapper}>
-                <AssignmentIndIcon />
+                <GroupIcon />
               </Avatar>
             </Box>
           </Box>

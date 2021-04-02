@@ -14,7 +14,7 @@ import TextField from '@material-ui/core/TextField';
 import Link from '@material-ui/core/Link';
 import Button from '@material-ui/core/Button';
 
-import AssignmentIndIcon from '@material-ui/icons/AssignmentInd';
+import SpeakerGroupIcon from '@material-ui/icons/SpeakerGroup';
 
 const useStyles = makeStyles((theme) => ({
 	section: {
@@ -49,16 +49,29 @@ export default function Component(props) {
 				<Box py={16}>
 					<Card variant="outlined">
 						<CardContent>
+
+							{/* Join Icon */}
 							<Box display="flex" mt={3}>
 								<Box mx="auto">
 									<Avatar variant="rounded" className={classes.iconWrapper}>
-										<AssignmentIndIcon />
+										<SpeakerGroupIcon />
 									</Avatar>
 								</Box>
 							</Box>
+
 							<Box mt={2} px={4}>
-								<Typography variant="h5" component="h3" align="center" gutterBottom={true}>Join a Room</Typography>
-								<Typography variant="body2" component="p" color="textSecondary" align="center">Enter the room code provided by the host</Typography>
+
+								{/* Join room header typography */}
+								<Typography variant="h5" component="h3" align="center" gutterBottom={true}>
+									Join a Room
+								</Typography>
+
+								{/* Join room sub-header typography */}
+								<Typography variant="body2" component="p" color="textSecondary" align="center">
+									Enter the room code provided by the host
+								</Typography>
+
+								{/* Form component (includes: text field, join button, create room text-button*/}
 								<Box my={3}>
 									<form>
 										<Grid container
@@ -66,19 +79,39 @@ export default function Component(props) {
 											justify="center"
 											alignItems="center"
 											spacing={2}>
+
+											{/* Room code input field */}
 											<Grid item xs={12}>
-												<TextField onChange={props.change} variant="outlined" fullWidth size="small" name="roomkey" label="Enter room code" />
+												<TextField onChange={props.change}
+														   variant="outlined"
+														   fullWidth size="small"
+														   name="roomkey"
+														   label="Enter room code">
+												</TextField>
 											</Grid>
+
+											{/* Join Button Grid Item*/}
 											<Grid item xs={12}>
-												<Button onClick={props.setKey} variant="contained" color="primary" size="large" className={classes.primaryAction}>
+												<Button onClick={props.setKey}
+														variant="contained"
+														color="primary"
+														size="large"
+														className={classes.primaryAction}>
 													Join
                       							</Button>
 											</Grid>
+
+											{/* Meant to create a room button */}
 											<Grid item xs={12}>
-												<Box alignItems="center" justifyContent="space-between" className={classes.actions}>
-													<Link href="/create" color="textSecondary">Meant to create a room?</Link>
+												<Box alignItems="center"
+													 justifyContent="space-between"
+													 className={classes.actions}>
+													<Link href="/create" color="textSecondary">
+														Meant to create a room?
+													</Link>
 												</Box>
 											</Grid>
+
 										</Grid>
 									</form>
 								</Box>

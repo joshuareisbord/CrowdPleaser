@@ -6,9 +6,8 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
 import Avatar from "@material-ui/core/Avatar";
 import ListItemText from "@material-ui/core/ListItemText";
-import IconButton from "@material-ui/core/IconButton";
-import ExpandLessIcon from "@material-ui/icons/ExpandLess";
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+
+import VoteButtons from './queue/vote_buttons'
 
 
 /* This is the queue component */
@@ -20,16 +19,35 @@ class Queue extends Component{
         this.state = {
             queue: null
         }
+
+        this.roomRef = firebase.firestore() // reference to the room which queue represents.
+            .collection('rooms')
+            .doc(this.props.room);
+    }
+
+    /*
+    Function handles user votes
+    * When answer is true, increment the song of id
+    * else, decrement it
+    */
+    handleVote(answer, id){
+        this.roomRef
+            .collection('queue')
+            .doc(id) // get document of song (found using its ID)
+            .update(
+                {'priority': firebase.firestore.FieldValue.increment(answer ? 1 : -1)} // update priority
+            ).then(() => {
+                console.log("Updated song priority!")
+        });
     }
 
     /* When the Queue component renders at first, this function will be called.*/
     componentDidMount() {
 
-        const ref = firebase.firestore(); // database reference
-        const roomRef = ref.collection('rooms').doc(this.props.room); // room reference
-
-        roomRef.collection('queue')
+        this.roomRef.collection('queue') // room queue
+            .orderBy('priority', 'desc') // highest priority song first
             .onSnapshot(querySnapshot => { // on snapshot (change of db) re-render the queue
+
                 const queueItems = querySnapshot.docs.map(doc =>
 
                     <ListItem>
@@ -44,27 +62,14 @@ class Queue extends Component{
                             primary={doc.data().name}
                             secondary={doc.data().artist}
                         />
-
-                        {/* Upvote button */}
-                        <ListItemAvatar>
-                            <IconButton edge="end" aria-label="upvote">
-                                <ExpandLessIcon/>
-                            </IconButton>
-                        </ListItemAvatar>
-
-                        {/* Down vote button */}
-                        <ListItemAvatar>
-                            <IconButton edge="end" aria-label="downvote">
-                                <ExpandMoreIcon/>
-                            </IconButton>
-                        </ListItemAvatar>
+                        <VoteButtons id={doc.id} handleVote={this.handleVote.bind(this)}/>
 
                     </ListItem>
 
                 ) // end queueItems mapping
 
-                this.setState({queue: queueItems}); // return queue
-                console.log("Updated queue!")
+                this.setState({queue: queueItems}); // render queue snapshot
+
             }) // end of onSnapshot
 
     } // end of componentDidMount

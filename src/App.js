@@ -10,8 +10,8 @@ import { Box } from '@material-ui/core'
 import Footer from './components/footers/footer';
 
 import Home from './components/paths/home';
-import HostviewPage from './components/paths/create/host/host';
-import GuestviewPage from './components/paths/join/guest/guest';
+import HostviewPage from './components/paths/create/host/host_page';
+import GuestviewPage from './components/paths/join/guest/guest_page';
 import CreatePage from './components/paths/create';
 import JoinPage from './components/paths/join';
 import ErrorPage from './components/paths/404';
