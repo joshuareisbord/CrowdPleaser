@@ -71,9 +71,7 @@ export default function Component(props) {
                       alignItems="center"
                       spacing={2} >
                   <Grid item xs={12}>
-                    {/* <Button type="submit" variant="contained" color="primary" size="large" className={classes.primaryAction}>
-                        Login with Spotify
-                      </Button> */}
+                      {/* Need to add functionality to make this button return a Spotify OAuth key for the user. */}
                       <Button onClick={props.handleLogin} variant="contained" color="primary" size="large" className={classes.primaryAction}>
                         Login with Spotify
                       </Button>

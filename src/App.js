@@ -9,12 +9,12 @@ import { Box } from '@material-ui/core'
 
 import Footer from './components/footers/footer';
 
-import IndexPage from './pages/Index.js';
-import HostviewPage from './pages/host.js';
-import GuestviewPage from './pages/guest.js';
-import CreatePage from './pages/create.js';
-import JoinPage from './pages/Join.js';
-import ErrorPage from './pages/404.js';
+import Home from './components/paths/home';
+import HostviewPage from './components/paths/create/host/host';
+import GuestviewPage from './components/paths/join/guest/guest';
+import CreatePage from './components/paths/create';
+import JoinPage from './components/paths/join';
+import ErrorPage from './components/paths/404';
 
 
 export default function App() {
@@ -57,7 +57,7 @@ export default function App() {
                 <Router>
                     <Switch>
                       <Route exact path="/">
-                        <IndexPage />
+                        <Home />
                       </Route>
                       <Route exact path="/hostview">
                         <HostviewPage />

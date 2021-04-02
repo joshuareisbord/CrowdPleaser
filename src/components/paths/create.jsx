@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import CreateRoom from '../components/menus/create';
+import CreateRoom from './create/create_form';
 
-import veryifyKey from '../util/veryifykey';
+import veryifyKey from '../../util/veryifykey';
 
-import HostPage from './host'
+import HostPage from './create/host/host'
 
 class Create extends Component{
 

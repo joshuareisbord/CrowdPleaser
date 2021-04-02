@@ -4,52 +4,53 @@ import firebase from '../firebase'
 
 
 
-  const ref = firebase.firestore(); // database reference
+const ref = firebase.firestore(); // database reference
 
-  const list_songs = (queue) => {
+const list_songs = (queue) => {
 
-      // queue.map( ({ docID, songID, name, artist, image, priority}) =>
+	// queue.map( ({ docID, songID, name, artist, image, priority}) =>
 
-      //           return ()
-      
-      // )
+	//           return ()
 
-      
-    } // end of list_songs function
+	// )
 
-      // docID: doc.id,
-      // songID: doc.data().id,
-      // name: doc.data().name,
-      // artist: doc.data().artist,
-      // image: doc.data().image,
-      // priority: doc.data().priority,
-  
 
-  export const db_get_room = (room) => { // takes the rooms collection
+} // end of list_songs function
 
-    console.log(room)
+// docID: doc.id,
+// songID: doc.data().id,
+// name: doc.data().name,
+// artist: doc.data().artist,
+// image: doc.data().image,
+// priority: doc.data().priority,
 
-    let queue = []
 
-    const roomRef = ref.collection('rooms').doc(room);
+export const db_get_room = (room) => { // takes the rooms collection
 
-    // const queueRef = roomRef.collection('queue')
+	// console.log(room)
 
-    let unsubscribe = roomRef.collection('queue')
-        .onSnapshot(querySnapshot => {
+	let queue = []
 
-          
+	const roomRef = ref.collection('rooms').doc(room);
 
-          const items = querySnapshot.docs.map(doc => queue.push({docID: doc.id,
-                                                                 songID: doc.data().id,
-                                                                 name: doc.data().name,
-                                                                 artist: doc.data().artist,
-                                                                 image: doc.data().image,
-                                                                 priority: doc.data().priority,
-                                                                }))
-        })
+	// const queueRef = roomRef.collection('queue')
 
-    // console.log(queue)
-    return queue
+	let unsubscribe = roomRef.collection('queue')
+		.onSnapshot(querySnapshot => {
 
-  }
+			const items = querySnapshot.docs.map(doc => queue.push({
+				docID: doc.id,
+				songID: doc.data().id,
+				name: doc.data().name,
+				artist: doc.data().artist,
+				image: doc.data().image,
+				priority: doc.data().priority,
+			}))
+
+			console.log(queue)
+		})
+
+	console.log(queue)
+	return queue
+
+}
