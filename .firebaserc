@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "crowd-pleaser-75fd7"
+    "default": "crowd-pleaser-75fd7",
+    "crowdpleaser": "crowd-pleaser-75fd7"
   }
 }
