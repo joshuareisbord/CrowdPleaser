@@ -31,7 +31,7 @@ export default function App() {
         interriorBox: {
             display: 'flex',
             width: '100vw',
-            height: '90vh',
+            minHeight: '90vh',
             alignItems: 'center',
             justifyContent: 'center',
             flexDirection: 'column',
