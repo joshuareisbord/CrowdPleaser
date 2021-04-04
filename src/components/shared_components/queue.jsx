@@ -9,6 +9,11 @@ import ListItemText from "@material-ui/core/ListItemText";
 
 import VoteButtons from './queue/vote_buttons'
 
+import Search from './queue/search'
+import Grid from "@material-ui/core/Grid";
+import Typography from "@material-ui/core/Typography";
+import {Paper} from "@material-ui/core";
+
 
 /* This is the queue component */
 class Queue extends Component{
@@ -17,7 +22,8 @@ class Queue extends Component{
         super(props);
 
         this.state = {
-            queue: null
+            queue: null,
+            oAuth: false
         }
 
         this.roomRef = firebase.firestore() // reference to the room which queue represents.
@@ -41,6 +47,13 @@ class Queue extends Component{
         });
     }
 
+    /*
+    * Temp function used to set oAuth key
+    * */
+    handleOauth(){
+        this.setState({oAuth: true})
+    }
+
     /* When the Queue component renders at first, this function will be called.*/
     componentDidMount() {
 
@@ -50,7 +63,8 @@ class Queue extends Component{
 
                 const queueItems = querySnapshot.docs.map(doc =>
 
-                    <ListItem>
+
+                    <ListItem key={doc.id}>
 
                         {/* List item image (album cover) */}
                         <ListItemAvatar>
@@ -65,6 +79,7 @@ class Queue extends Component{
                         <VoteButtons id={doc.id} handleVote={this.handleVote.bind(this)}/>
 
                     </ListItem>
+
 
                 ) // end queueItems mapping
 
@@ -92,7 +107,25 @@ class Queue extends Component{
         /* Return the current song queue */
         return (
             <div>
-                {this.state.queue}
+
+                    <Grid container direction="column" justify="center" alignItems="center">
+
+                        <Grid item>
+                            <Typography variant="h6" color="textSecondary" paragraph={true}>
+                                Use the arrows next to the songs in the queue to vote
+                            </Typography>
+                        </Grid>
+
+                        <Grid item>
+                            {this.state.queue}
+                        </Grid>
+
+                        <Grid item>
+                            <Search handleOauth={this.handleOauth.bind(this)} oAuth={this.state.oAuth}/>
+                        </Grid>
+
+                    </Grid>
+
             </div>
         );
 

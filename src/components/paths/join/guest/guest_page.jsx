@@ -48,12 +48,6 @@ export default function Guest_page(props) {
 					</Typography>
 				</Typography>
 
-				<Container maxWidth="sm">
-					<Typography variant="h6" color="textSecondary" paragraph={true}>
-						Upvote or down vote songs as seen fit!
-					</Typography>
-				</Container>
-
 			</Box>
 
 			<Grid container>

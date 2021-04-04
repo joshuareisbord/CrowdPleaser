@@ -43,13 +43,23 @@ class VoteButton extends Component {
         this.setState({answer: false, used: true})
     }
 
+    genKey(length) {
+        let result           = '';
+        let characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        let charactersLength = characters.length;
+        for ( let i = 0; i < length; i++ ) {
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+        }
+        return result;
+    }
+
     render() {
 
         if (this.state.used){
             return ( // result icon
 
                 [
-                    <ListItemAvatar>
+                    <ListItemAvatar key={this.genKey(10)}>
                         <Icon edge="end">
                             {this.state.answer ? <CheckCircleOutlineIcon/> : <HighlightOffIcon/>}
                         </Icon>
@@ -60,7 +70,7 @@ class VoteButton extends Component {
         return ( // upvote and down-vote button
 
                 [
-                    <ListItemAvatar>
+                    <ListItemAvatar key={this.genKey(10)}>
                         <IconButton
                             onClick={this.doUpVote.bind(this)}
                             edge="end"
@@ -71,7 +81,7 @@ class VoteButton extends Component {
 
                     ,
 
-                    <ListItemAvatar>
+                    <ListItemAvatar key={this.genKey(10)}>
                         <IconButton
                             onClick={this.doDownVote.bind(this)}
                             edge="end"
