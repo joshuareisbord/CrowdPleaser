@@ -56,15 +56,16 @@ export default function Component(props) {
                                 </Box>
                             </Box>
                             <Box mt={2} px={4}>
-                                <Typography variant="h5" component="h3" align="center" gutterBottom={true}>Create a
-                                    Room</Typography>
-                                <Typography variant="h6" component="p" color="textSecondary" align="center">Please
-                                    Note:</Typography>
+                                <Typography variant="h5" component="h3" align="center" gutterBottom={true}>
+                                    Create a Room
+                                </Typography>
+                                <Typography variant="h6" component="p" color="textSecondary" align="center">
+                                    Please Note:
+                                </Typography>
                                 <Typography variant="body2" component="p" color="textSecondary" align="center">
-                                    This device will be the room host.
-                                    To keep your API keys private, this device will control your Spotify playback and
-                                    must remain open at all times.
-                                    Failure to do so will result in your room being terminated, and playback stopping.
+                                    This device will be the room host. In order for the website to function properly,
+                                    this webpage, as well as Spotify must remain open at all times during the session
+                                    as playback will be controlled via this device.
                                 </Typography>
                                 <Box my={3}>
                                     <form noValidate>
@@ -74,11 +75,16 @@ export default function Component(props) {
                                               alignItems="center"
                                               spacing={2}>
                                             <Grid item xs={12}>
-                                                {/* Need to add functionality to make this button return a Spotify OAuth key for the user. */}
+
+                                                {/*
+                                                Need to add functionality to make this button return a Spotify OAuth key for the user.
+                                                For Example purposes, this button will just join room 12AB
+                                                */}
                                                 <Button onClick={props.handleLogin} variant="contained" color="primary"
                                                         size="large" className={classes.primaryAction}>
                                                     Login with Spotify
                                                 </Button>
+
                                             </Grid>
                                             <Grid item xs={12}>
                                                 <Box alignItems="center" justifyContent="space-between"

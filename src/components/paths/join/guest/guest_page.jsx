@@ -8,9 +8,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 
 import Queue from '../../../shared_components/queue'
-import Container from "@material-ui/core/Container";
 import Box from "@material-ui/core/Box";
-import Button from "@material-ui/core/Button";
 
 const useStyles = makeStyles((theme) => ({
 		root: {
@@ -31,8 +29,6 @@ const useStyles = makeStyles((theme) => ({
 export default function Guest_page(props) {
 
 	const classes = useStyles();
-
-	// console.table(props.queue)
 
 	return (
 
@@ -56,7 +52,7 @@ export default function Guest_page(props) {
 					<div className={classes.demo}>
 						<List>
 
-							<Queue room={props.roomKey}/>
+							<Queue room={props.roomKey} host={false}/>
 							
 						</List>
 					</div>
@@ -64,7 +60,6 @@ export default function Guest_page(props) {
 
 			</Grid>
 		</div>
-
 
 	);
 }

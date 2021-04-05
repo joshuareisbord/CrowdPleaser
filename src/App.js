@@ -28,9 +28,8 @@ export default function App() {
             justifyContent: 'center',
             flexDirection: 'column',
         },
-        interriorBox: {
+        interiorBox: {
             display: 'flex',
-            width: '100vw',
             minHeight: '90vh',
             alignItems: 'center',
             justifyContent: 'center',
@@ -53,7 +52,7 @@ export default function App() {
             <Box style={styles.exteriorBox}>
 
                 {/* Page renders in this box */}
-                <Box style={styles.interriorBox} justifyContent='center'>
+                <Box style={styles.interiorBox} justifyContent='center'>
                     <Router>
                         <Switch>
                             <Route exact path="/">
@@ -82,7 +81,6 @@ export default function App() {
                 </Box>
 
                 {/* Footer renders in this page */}
-
                 <Box style={styles.footerBox}>
                     <Footer/>
                 </Box>

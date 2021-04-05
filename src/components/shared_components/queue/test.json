@@ -1,0 +1,772 @@
+{
+  "tracks": {
+    "href": "https://api.spotify.com/v1/search?query=gummy+bear&type=track&market=US&offset=0&limit=10",
+    "items": [
+      {
+        "album": {
+          "album_type": "single",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/44insiIQApkRaCMIbuaISJ"
+              },
+              "href": "https://api.spotify.com/v1/artists/44insiIQApkRaCMIbuaISJ",
+              "id": "44insiIQApkRaCMIbuaISJ",
+              "name": "Joey Pecoraro",
+              "type": "artist",
+              "uri": "spotify:artist:44insiIQApkRaCMIbuaISJ"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/0xVUJmFne9VNKRjIAqmXxh"
+          },
+          "href": "https://api.spotify.com/v1/albums/0xVUJmFne9VNKRjIAqmXxh",
+          "id": "0xVUJmFne9VNKRjIAqmXxh",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27355bb2ecaa67abe9b3b2643db",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0255bb2ecaa67abe9b3b2643db",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485155bb2ecaa67abe9b3b2643db",
+              "width": 64
+            }
+          ],
+          "name": "Gummy Bears and Sleeping In Alone",
+          "release_date": "2020-07-16",
+          "release_date_precision": "day",
+          "total_tracks": 3,
+          "type": "album",
+          "uri": "spotify:album:0xVUJmFne9VNKRjIAqmXxh"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/44insiIQApkRaCMIbuaISJ"
+            },
+            "href": "https://api.spotify.com/v1/artists/44insiIQApkRaCMIbuaISJ",
+            "id": "44insiIQApkRaCMIbuaISJ",
+            "name": "Joey Pecoraro",
+            "type": "artist",
+            "uri": "spotify:artist:44insiIQApkRaCMIbuaISJ"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 198095,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "US25X2001097"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/6MZt6HHIWlPZeyhi1C4ysJ"
+        },
+        "href": "https://api.spotify.com/v1/tracks/6MZt6HHIWlPZeyhi1C4ysJ",
+        "id": "6MZt6HHIWlPZeyhi1C4ysJ",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Gummy Bears and Sleeping In Alone",
+        "popularity": 51,
+        "preview_url": "https://p.scdn.co/mp3-preview/9bb96800da57c91423bee2a92ddfa50ff8a19083?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:6MZt6HHIWlPZeyhi1C4ysJ"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3XoN025BWO9WqOr0AgLlvl"
+              },
+              "href": "https://api.spotify.com/v1/artists/3XoN025BWO9WqOr0AgLlvl",
+              "id": "3XoN025BWO9WqOr0AgLlvl",
+              "name": "Gummy Bear",
+              "type": "artist",
+              "uri": "spotify:artist:3XoN025BWO9WqOr0AgLlvl"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/01qXi00Bys9jjS6mFboi96"
+          },
+          "href": "https://api.spotify.com/v1/albums/01qXi00Bys9jjS6mFboi96",
+          "id": "01qXi00Bys9jjS6mFboi96",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273242bef729eb6b2104c84cfef",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02242bef729eb6b2104c84cfef",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851242bef729eb6b2104c84cfef",
+              "width": 64
+            }
+          ],
+          "name": "Tha 'mai Kalo Paidi (I Am A Gummy Bear)",
+          "release_date": "2009",
+          "release_date_precision": "year",
+          "total_tracks": 19,
+          "type": "album",
+          "uri": "spotify:album:01qXi00Bys9jjS6mFboi96"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3XoN025BWO9WqOr0AgLlvl"
+            },
+            "href": "https://api.spotify.com/v1/artists/3XoN025BWO9WqOr0AgLlvl",
+            "id": "3XoN025BWO9WqOr0AgLlvl",
+            "name": "Gummy Bear",
+            "type": "artist",
+            "uri": "spotify:artist:3XoN025BWO9WqOr0AgLlvl"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 190200,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GRUM70901499"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/6BqdNDLZ3Pdcly46pu6nwj"
+        },
+        "href": "https://api.spotify.com/v1/tracks/6BqdNDLZ3Pdcly46pu6nwj",
+        "id": "6BqdNDLZ3Pdcly46pu6nwj",
+        "is_local": false,
+        "is_playable": true,
+        "name": "I Am A Gummy Bear - The Gummy Bear Song",
+        "popularity": 62,
+        "preview_url": "https://p.scdn.co/mp3-preview/eb8ed7e2895d9c175a6b279d18332a6b433051ec?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 4,
+        "type": "track",
+        "uri": "spotify:track:6BqdNDLZ3Pdcly46pu6nwj"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6NJb7ZCMVLu2ZXwWJa2O3G"
+              },
+              "href": "https://api.spotify.com/v1/artists/6NJb7ZCMVLu2ZXwWJa2O3G",
+              "id": "6NJb7ZCMVLu2ZXwWJa2O3G",
+              "name": "Gummibär",
+              "type": "artist",
+              "uri": "spotify:artist:6NJb7ZCMVLu2ZXwWJa2O3G"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/2Dbnxj6gi35LfYJ2gAKWSB"
+          },
+          "href": "https://api.spotify.com/v1/albums/2Dbnxj6gi35LfYJ2gAKWSB",
+          "id": "2Dbnxj6gi35LfYJ2gAKWSB",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27342f4498302d0b130aa95cddc",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0242f4498302d0b130aa95cddc",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485142f4498302d0b130aa95cddc",
+              "width": 64
+            }
+          ],
+          "name": "I Am Your Gummy Bear",
+          "release_date": "2007-11-13",
+          "release_date_precision": "day",
+          "total_tracks": 15,
+          "type": "album",
+          "uri": "spotify:album:2Dbnxj6gi35LfYJ2gAKWSB"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6NJb7ZCMVLu2ZXwWJa2O3G"
+            },
+            "href": "https://api.spotify.com/v1/artists/6NJb7ZCMVLu2ZXwWJa2O3G",
+            "id": "6NJb7ZCMVLu2ZXwWJa2O3G",
+            "name": "Gummibär",
+            "type": "artist",
+            "uri": "spotify:artist:6NJb7ZCMVLu2ZXwWJa2O3G"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 192226,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "USR3R0700073"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/6nFYXpBgrNcZjbtNEuc6yR"
+        },
+        "href": "https://api.spotify.com/v1/tracks/6nFYXpBgrNcZjbtNEuc6yR",
+        "id": "6nFYXpBgrNcZjbtNEuc6yR",
+        "is_local": false,
+        "is_playable": true,
+        "name": "I Am Your Gummy Bear (The Gummy Bear Song)",
+        "popularity": 60,
+        "preview_url": "https://p.scdn.co/mp3-preview/df74448fca22f520c63bf3f8ad7238020aff860f?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:6nFYXpBgrNcZjbtNEuc6yR"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4kj0CueR4VfUfOSgkUV94r"
+              },
+              "href": "https://api.spotify.com/v1/artists/4kj0CueR4VfUfOSgkUV94r",
+              "id": "4kj0CueR4VfUfOSgkUV94r",
+              "name": "AkaPella",
+              "type": "artist",
+              "uri": "spotify:artist:4kj0CueR4VfUfOSgkUV94r"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/05AvGPWJMGNIXo0TmRqB3d"
+          },
+          "href": "https://api.spotify.com/v1/albums/05AvGPWJMGNIXo0TmRqB3d",
+          "id": "05AvGPWJMGNIXo0TmRqB3d",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2733e73f9bf2a465eb45fbdaae5",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e023e73f9bf2a465eb45fbdaae5",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048513e73f9bf2a465eb45fbdaae5",
+              "width": 64
+            }
+          ],
+          "name": "A.K.A. Pella Presents 2012 the Year in Review",
+          "release_date": "2013-04-06",
+          "release_date_precision": "day",
+          "total_tracks": 13,
+          "type": "album",
+          "uri": "spotify:album:05AvGPWJMGNIXo0TmRqB3d"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4kj0CueR4VfUfOSgkUV94r"
+            },
+            "href": "https://api.spotify.com/v1/artists/4kj0CueR4VfUfOSgkUV94r",
+            "id": "4kj0CueR4VfUfOSgkUV94r",
+            "name": "AkaPella",
+            "type": "artist",
+            "uri": "spotify:artist:4kj0CueR4VfUfOSgkUV94r"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 177920,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "TCABN1332793"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/5sWxerX7ckE7Kw5ZdfU6a5"
+        },
+        "href": "https://api.spotify.com/v1/tracks/5sWxerX7ckE7Kw5ZdfU6a5",
+        "id": "5sWxerX7ckE7Kw5ZdfU6a5",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Gummy Bear",
+        "popularity": 40,
+        "preview_url": "https://p.scdn.co/mp3-preview/2abe230aae2befb952f507b5d1cbaa154f5792d5?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 6,
+        "type": "track",
+        "uri": "spotify:track:5sWxerX7ckE7Kw5ZdfU6a5"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5MyXeAWN7mjABNAjZDhQqA"
+              },
+              "href": "https://api.spotify.com/v1/artists/5MyXeAWN7mjABNAjZDhQqA",
+              "id": "5MyXeAWN7mjABNAjZDhQqA",
+              "name": "Kids Now",
+              "type": "artist",
+              "uri": "spotify:artist:5MyXeAWN7mjABNAjZDhQqA"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/3RhjjE9aPdjDa3G5Uq3vFH"
+          },
+          "href": "https://api.spotify.com/v1/albums/3RhjjE9aPdjDa3G5Uq3vFH",
+          "id": "3RhjjE9aPdjDa3G5Uq3vFH",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273f2075372c5f38277975198ab",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02f2075372c5f38277975198ab",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851f2075372c5f38277975198ab",
+              "width": 64
+            }
+          ],
+          "name": "Holiday Disco Mini Disco Songs",
+          "release_date": "2013-11-09",
+          "release_date_precision": "day",
+          "total_tracks": 30,
+          "type": "album",
+          "uri": "spotify:album:3RhjjE9aPdjDa3G5Uq3vFH"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5MyXeAWN7mjABNAjZDhQqA"
+            },
+            "href": "https://api.spotify.com/v1/artists/5MyXeAWN7mjABNAjZDhQqA",
+            "id": "5MyXeAWN7mjABNAjZDhQqA",
+            "name": "Kids Now",
+            "type": "artist",
+            "uri": "spotify:artist:5MyXeAWN7mjABNAjZDhQqA"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 192506,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GBHGE1303388"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/4IF4NiwlEtqAo5fFXyA6cA"
+        },
+        "href": "https://api.spotify.com/v1/tracks/4IF4NiwlEtqAo5fFXyA6cA",
+        "id": "4IF4NiwlEtqAo5fFXyA6cA",
+        "is_local": false,
+        "is_playable": true,
+        "name": "I'm a Gummy Bear",
+        "popularity": 50,
+        "preview_url": "https://p.scdn.co/mp3-preview/f7b23fdf45b4d17270a737b6b569feebb73408a1?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 6,
+        "type": "track",
+        "uri": "spotify:track:4IF4NiwlEtqAo5fFXyA6cA"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3XoN025BWO9WqOr0AgLlvl"
+              },
+              "href": "https://api.spotify.com/v1/artists/3XoN025BWO9WqOr0AgLlvl",
+              "id": "3XoN025BWO9WqOr0AgLlvl",
+              "name": "Gummy Bear",
+              "type": "artist",
+              "uri": "spotify:artist:3XoN025BWO9WqOr0AgLlvl"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/01qXi00Bys9jjS6mFboi96"
+          },
+          "href": "https://api.spotify.com/v1/albums/01qXi00Bys9jjS6mFboi96",
+          "id": "01qXi00Bys9jjS6mFboi96",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273242bef729eb6b2104c84cfef",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02242bef729eb6b2104c84cfef",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851242bef729eb6b2104c84cfef",
+              "width": 64
+            }
+          ],
+          "name": "Tha 'mai Kalo Paidi (I Am A Gummy Bear)",
+          "release_date": "2009",
+          "release_date_precision": "year",
+          "total_tracks": 19,
+          "type": "album",
+          "uri": "spotify:album:01qXi00Bys9jjS6mFboi96"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3XoN025BWO9WqOr0AgLlvl"
+            },
+            "href": "https://api.spotify.com/v1/artists/3XoN025BWO9WqOr0AgLlvl",
+            "id": "3XoN025BWO9WqOr0AgLlvl",
+            "name": "Gummy Bear",
+            "type": "artist",
+            "uri": "spotify:artist:3XoN025BWO9WqOr0AgLlvl"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 130853,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GRUM70901512"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/5sZHz3wRnC67Iae4KN6wWw"
+        },
+        "href": "https://api.spotify.com/v1/tracks/5sZHz3wRnC67Iae4KN6wWw",
+        "id": "5sZHz3wRnC67Iae4KN6wWw",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Do You Think I'm Sexy",
+        "popularity": 46,
+        "preview_url": "https://p.scdn.co/mp3-preview/2e7bfefae81b56e13d26b0f54c21dd5a0a1135c7?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 17,
+        "type": "track",
+        "uri": "spotify:track:5sZHz3wRnC67Iae4KN6wWw"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6NJb7ZCMVLu2ZXwWJa2O3G"
+              },
+              "href": "https://api.spotify.com/v1/artists/6NJb7ZCMVLu2ZXwWJa2O3G",
+              "id": "6NJb7ZCMVLu2ZXwWJa2O3G",
+              "name": "Gummibär",
+              "type": "artist",
+              "uri": "spotify:artist:6NJb7ZCMVLu2ZXwWJa2O3G"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/1sgWR5fZEmnBxPlbjmCQVg"
+          },
+          "href": "https://api.spotify.com/v1/albums/1sgWR5fZEmnBxPlbjmCQVg",
+          "id": "1sgWR5fZEmnBxPlbjmCQVg",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273d2e8dbe8a9a4a31280dd8f51",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02d2e8dbe8a9a4a31280dd8f51",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851d2e8dbe8a9a4a31280dd8f51",
+              "width": 64
+            }
+          ],
+          "name": "The Gummy Bear Song International Singles",
+          "release_date": "2007-12-11",
+          "release_date_precision": "day",
+          "total_tracks": 10,
+          "type": "album",
+          "uri": "spotify:album:1sgWR5fZEmnBxPlbjmCQVg"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6NJb7ZCMVLu2ZXwWJa2O3G"
+            },
+            "href": "https://api.spotify.com/v1/artists/6NJb7ZCMVLu2ZXwWJa2O3G",
+            "id": "6NJb7ZCMVLu2ZXwWJa2O3G",
+            "name": "Gummibär",
+            "type": "artist",
+            "uri": "spotify:artist:6NJb7ZCMVLu2ZXwWJa2O3G"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 192240,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "USR3R0700073"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/5YJfmBODXO0lL2zTDf8xlD"
+        },
+        "href": "https://api.spotify.com/v1/tracks/5YJfmBODXO0lL2zTDf8xlD",
+        "id": "5YJfmBODXO0lL2zTDf8xlD",
+        "is_local": false,
+        "is_playable": true,
+        "name": "I Am A Gummy Bear (English)",
+        "popularity": 44,
+        "preview_url": "https://p.scdn.co/mp3-preview/1e7551909a8a41d3e90c7ed6a2bef5e02c7acedf?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 2,
+        "type": "track",
+        "uri": "spotify:track:5YJfmBODXO0lL2zTDf8xlD"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3XoN025BWO9WqOr0AgLlvl"
+              },
+              "href": "https://api.spotify.com/v1/artists/3XoN025BWO9WqOr0AgLlvl",
+              "id": "3XoN025BWO9WqOr0AgLlvl",
+              "name": "Gummy Bear",
+              "type": "artist",
+              "uri": "spotify:artist:3XoN025BWO9WqOr0AgLlvl"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/01qXi00Bys9jjS6mFboi96"
+          },
+          "href": "https://api.spotify.com/v1/albums/01qXi00Bys9jjS6mFboi96",
+          "id": "01qXi00Bys9jjS6mFboi96",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273242bef729eb6b2104c84cfef",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02242bef729eb6b2104c84cfef",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851242bef729eb6b2104c84cfef",
+              "width": 64
+            }
+          ],
+          "name": "Tha 'mai Kalo Paidi (I Am A Gummy Bear)",
+          "release_date": "2009",
+          "release_date_precision": "year",
+          "total_tracks": 19,
+          "type": "album",
+          "uri": "spotify:album:01qXi00Bys9jjS6mFboi96"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3XoN025BWO9WqOr0AgLlvl"
+            },
+            "href": "https://api.spotify.com/v1/artists/3XoN025BWO9WqOr0AgLlvl",
+            "id": "3XoN025BWO9WqOr0AgLlvl",
+            "name": "Gummy Bear",
+            "type": "artist",
+            "uri": "spotify:artist:3XoN025BWO9WqOr0AgLlvl"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 229200,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GRUM70901500"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/7b5Cl7XC8vk5Cgdhqslxkr"
+        },
+        "href": "https://api.spotify.com/v1/tracks/7b5Cl7XC8vk5Cgdhqslxkr",
+        "id": "7b5Cl7XC8vk5Cgdhqslxkr",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Funny DJ",
+        "popularity": 44,
+        "preview_url": "https://p.scdn.co/mp3-preview/3aa342596bb58e9d880d05d249299aae83d425f3?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 5,
+        "type": "track",
+        "uri": "spotify:track:7b5Cl7XC8vk5Cgdhqslxkr"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3XoN025BWO9WqOr0AgLlvl"
+              },
+              "href": "https://api.spotify.com/v1/artists/3XoN025BWO9WqOr0AgLlvl",
+              "id": "3XoN025BWO9WqOr0AgLlvl",
+              "name": "Gummy Bear",
+              "type": "artist",
+              "uri": "spotify:artist:3XoN025BWO9WqOr0AgLlvl"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/7z4AkNaUqtibMboWAumMR4"
+          },
+          "href": "https://api.spotify.com/v1/albums/7z4AkNaUqtibMboWAumMR4",
+          "id": "7z4AkNaUqtibMboWAumMR4",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273cfbd7e9be54c1996db495cd4",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02cfbd7e9be54c1996db495cd4",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851cfbd7e9be54c1996db495cd4",
+              "width": 64
+            }
+          ],
+          "name": "Duck Walk",
+          "release_date": "2011-12-20",
+          "release_date_precision": "day",
+          "total_tracks": 16,
+          "type": "album",
+          "uri": "spotify:album:7z4AkNaUqtibMboWAumMR4"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3XoN025BWO9WqOr0AgLlvl"
+            },
+            "href": "https://api.spotify.com/v1/artists/3XoN025BWO9WqOr0AgLlvl",
+            "id": "3XoN025BWO9WqOr0AgLlvl",
+            "name": "Gummy Bear",
+            "type": "artist",
+            "uri": "spotify:artist:3XoN025BWO9WqOr0AgLlvl"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 62986,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "US4R31135894"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/4VgwXb48Qzr6w3kh175lbq"
+        },
+        "href": "https://api.spotify.com/v1/tracks/4VgwXb48Qzr6w3kh175lbq",
+        "id": "4VgwXb48Qzr6w3kh175lbq",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Keeping up with the Treadmill - Cartoon Theme Players",
+        "popularity": 40,
+        "preview_url": "https://p.scdn.co/mp3-preview/aa8ad1832344d1adca2046f04ab65ecb54d6472c?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 8,
+        "type": "track",
+        "uri": "spotify:track:4VgwXb48Qzr6w3kh175lbq"
+      },
+      {
+        "album": {
+          "album_type": "album",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6NJb7ZCMVLu2ZXwWJa2O3G"
+              },
+              "href": "https://api.spotify.com/v1/artists/6NJb7ZCMVLu2ZXwWJa2O3G",
+              "id": "6NJb7ZCMVLu2ZXwWJa2O3G",
+              "name": "Gummibär",
+              "type": "artist",
+              "uri": "spotify:artist:6NJb7ZCMVLu2ZXwWJa2O3G"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/2t53vHcZLns0nW24Vmd6z3"
+          },
+          "href": "https://api.spotify.com/v1/albums/2t53vHcZLns0nW24Vmd6z3",
+          "id": "2t53vHcZLns0nW24Vmd6z3",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2734f95692fa132d1e91ddb5593",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e024f95692fa132d1e91ddb5593",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048514f95692fa132d1e91ddb5593",
+              "width": 64
+            }
+          ],
+          "name": "Party Pop",
+          "release_date": "2015-10-16",
+          "release_date_precision": "day",
+          "total_tracks": 16,
+          "type": "album",
+          "uri": "spotify:album:2t53vHcZLns0nW24Vmd6z3"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/6NJb7ZCMVLu2ZXwWJa2O3G"
+            },
+            "href": "https://api.spotify.com/v1/artists/6NJb7ZCMVLu2ZXwWJa2O3G",
+            "id": "6NJb7ZCMVLu2ZXwWJa2O3G",
+            "name": "Gummibär",
+            "type": "artist",
+            "uri": "spotify:artist:6NJb7ZCMVLu2ZXwWJa2O3G"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 143092,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "USR3R1500077"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/4fFWKcB0x0aKAq18LvEYf5"
+        },
+        "href": "https://api.spotify.com/v1/tracks/4fFWKcB0x0aKAq18LvEYf5",
+        "id": "4fFWKcB0x0aKAq18LvEYf5",
+        "is_local": false,
+        "is_playable": true,
+        "name": "I Am A Gummy Bear (2015 Remix)",
+        "popularity": 42,
+        "preview_url": "https://p.scdn.co/mp3-preview/2267f4cde0a1abbfa8b68deaa6bd53b94f452196?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 12,
+        "type": "track",
+        "uri": "spotify:track:4fFWKcB0x0aKAq18LvEYf5"
+      }
+    ],
+    "limit": 10,
+    "next": "https://api.spotify.com/v1/search?query=gummy+bear&type=track&market=US&offset=10&limit=10",
+    "offset": 0,
+    "previous": null,
+    "total": 551
+  }
+}

@@ -16,7 +16,7 @@ export default function Component(props) {
   return (
     <footer>
       <Container maxWidth="lg">
-        <Box py={2} textAlign="center">
+        <Box py={1} textAlign="center">
           <Box>
             <IconButton color="inherit" aria-label="Facebook">
               <FacebookIcon />

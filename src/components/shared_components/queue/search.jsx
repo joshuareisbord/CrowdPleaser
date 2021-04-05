@@ -1,28 +1,33 @@
-import React, {useState} from "react";
-
-import {Box, Grid} from "@material-ui/core";
+import React from 'react';
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
+import Dialog from '@material-ui/core/Dialog';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import {Grid} from "@material-ui/core";
 import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import TextField from "@material-ui/core/TextField";
+import List from "@material-ui/core/List";
 
 
-function promptLogin(props){
+export default function FormDialog(props) {
+    const [open, setOpen] = React.useState(false);
 
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
 
-}
+    const handleClose = () => {
+        setOpen(false);
+        props.handleClear()
+    };
 
-function doSearch(props){
+    if (!props.oAuth){ // not logged in
 
-
-}
-
-export default function searchMenu(props){
-
-
-    if (!props.oAuth){ // user has not logged in
         return (
             <div>
-                <Grid container spacing={0} direction={"column"} alignItems={'center'}>
+                <Grid container spacing={1} direction={"column"} alignItems={'center'}>
 
                     <Grid item>
                         <Typography variant="body2" component="p" color="textSecondary" align="center">
@@ -31,7 +36,7 @@ export default function searchMenu(props){
                     </Grid>
 
                     <Grid item>
-                        <Button onClick={props.handleOauth} color={'primary'}>
+                        <Button onClick={props.handleOauth} color={'primary'} variant={'outlined'}>
                             Login with Spotify
                         </Button>
                     </Grid>
@@ -39,40 +44,46 @@ export default function searchMenu(props){
                 </Grid>
             </div>
         );
-    }
-    return ( // user is logged in (oAuth has been set)
+    } // end if
+
+    // user is logged into spotify account.
+    return (
         <div>
-            <form>
 
-                <Grid container direction={'column'} alignItems={'center'} spacing={1}>
+            <Button variant="outlined" color="primary" onClick={handleClickOpen}>
+                Search for a song
+            </Button>
 
-                    <Grid item>
-                        <Typography variant="body2" component="p" color="textSecondary" align="center">
-                            Search for a song to be added to the queue
-                        </Typography>
-                    </Grid>
+            <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
 
-                    <Grid container item spacing={2} direction={"row"} alignItems={'center'}>
+                <DialogTitle id="form-dialog-title">
+                    Search
+                </DialogTitle>
 
-                        <Grid item>
-                            <TextField
-                                variant="outlined"
-                                fullWidth size="small"
-                                name="songSearch"
-                                label="Enter song name">
-                            </TextField>
-                        </Grid>
+                <DialogContent>
+                    <DialogContentText>
+                        Enter a song title below to search
+                    </DialogContentText>
+                    <TextField
+                        autoFocus
+                        label="Track name"
+                        fullWidth
+                    />
+                    <List>
+                        {props.searchQuery}
+                    </List>
+                </DialogContent>
 
-                        <Grid item>
-                            <Button variant={"contained"} color={'primary'}>
-                                Search...
-                            </Button>
-                        </Grid>
+                <DialogActions>
+                    <Button onClick={props.handleSearch} color="primary" variant={'contained'}>
+                        Search
+                    </Button>
+                    <Button onClick={handleClose} color="secondary" variant={'contained'}>
+                        Cancel
+                    </Button>
+                </DialogActions>
+            </Dialog>
 
-                    </Grid>
-
-                </Grid>
-            </form>
         </div>
-    )
+    ); // end return (user is logged in)
 }
